@@ -57,7 +57,8 @@ const about = {
   imageSize: 375,
   message:
     "Hi, I am Nimer Amol Singh. I am an alumnus of Manipal University Jaipur. I am passionate about Cryptography, Blockchain and their real world applications. Right now, I am working in Shivoham Techno Services Pvt. Ltd., A New-Delhi based Start-up in the field of IoT and Automation where I am acting as a Project Lead. In my free time I like to solve puzzles, design art, and watch Formula 1.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: require("../editable-stuff/resume.pdf"),
+	//resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -73,12 +74,68 @@ const repos = {
   specificRepos: [],
 };
 
+const PGP = {
+	title:"End-to-End PGP Module",
+	year: 2018,
+	type: "Academic Project",
+	link:null,
+	information: ['Built using Python with no support of External Libraries',
+				 'End to end encryption and decryption technique using socket communication',
+				  'Implemented Random sleep timers in core RSA encryption and decryption modules as suggested by Adi Shamir and research team in RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis',
+				  'Presented a modified function for Dell Hack-To-Hire Hackathon'
+				 ],
+	page:"PGP"
+}
+
+
 // Leadership SECTION
 const leadership = {
   show: true,
-  heading: "Leadership",
+  heading: "Projects",
   message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
+	[
+		{title: "Implementation And Analysis of Blockchain Based DAPP for Secured Sharing of Students’ Credentials",
+		year: 2019,
+		type: "Research Paper",
+		link: "https://ieeexplore.ieee.org/document/9045196",
+		information: [
+					  'Architected, Designed and Implemented a solution for sharing students’ credentials', 
+					  'Built using HTML, CSS, Bootstrap, React, NodeJs, IPFS', 
+					  'Integrated with Rinkeby Test Network on Ethereum using Smart Contracts',
+					  'Performed cost and performance analysis on various experiments'
+					 ],
+		image: require("../editable-stuff/blockchainanalysis.png"),
+		 page: "BlockchainAnalysis"
+		},
+		{
+			title:"End-to-End PGP Module",
+			year: 2018,
+			type: "Academic Project",
+			link:null,
+			information: ['Built using Python with no support of External Libraries',
+						 'End to end encryption and decryption technique using socket communication',
+						  'Implemented Random sleep timers in core RSA encryption and decryption modules as suggested by Adi Shamir and research team in RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis',
+						  'Presented a modified function for Dell Hack-To-Hire Hackathon'
+						 ],
+			page:"PGP",
+			image: require("../editable-stuff/PGP.png")
+			
+		},
+		{
+			title: "Machine Translation Model",
+			year: '2018',
+			type: "Academic Project",
+			link: null,
+			information: [
+				"Built model using python to create a Natural Language Processing Application for converting English to Spanish",
+				"Implemented RNN’s which utilized Seq2Seq models for final trainings",
+				"Built front end using HTML, CSS and React",
+				"Created API calls through FLASK backend to use the trained model"
+			],
+			page:"NLP",
+			image: require("../editable-stuff/neural-network.jpg")
+		}
+	],
   images: [
     { 
       img: require("../editable-stuff/pirate.sardar.jpg"), 
@@ -101,25 +158,27 @@ const leadership = {
 const skills = {
   show: true,
   heading: "Skills",
+gradientColors: "#5f2c82, #49a09d",
   hardSkills: [
     { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
     { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+	{ name: "SQL", value: 65 },
+    // { name: "C/C++", value: 65 },
+    // { name: "JavaScript", value: 90 },
+    { name: "React", value: 90 },
+	{name: "Blockchain", value: 80}
+    // { name: "HTML/CSS", value: 55 },
+    // { name: "C#", value: 80 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
     { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
+    // { name: "Positivity", value: 75 },
+    // { name: "Adaptability", value: 85 },
     { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
+    //{ name: "Empathy", value: 90 },
     { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    //{ name: "Creativity", value: 90 },
   ],
 };
 
@@ -134,6 +193,7 @@ const getInTouch = {
 
 const experiences = {
   show: true,
+	gradientColors: "#4b6cb7, #182848",
   heading: "Experiences",
   data: [
     {

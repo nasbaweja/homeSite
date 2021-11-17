@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import { Jumbotron, Container } from "react-bootstrap";
 import { useScrollPosition } from "../../hooks/useScrollPosition";
 
-function Skills({ heading, hardSkills, softSkills }) {
+function Skills({ heading, hardSkills, softSkills, gradient }) {
   const skillsTabRef = React.useRef();
   const [isScrolled, setIsScrolled] = React.useState(false);
   //const navbarDimensions = useResizeObserver(navbarMenuRef);
@@ -19,7 +19,17 @@ function Skills({ heading, hardSkills, softSkills }) {
     skillsTabRef
   );
   return (
-    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
+	  <div
+      id="skills"
+      className="jumbotron jumbotron-fluid m-0"
+      style={{
+          background: `linear-gradient(136deg,${gradient})`,
+          backgroundSize: "1200% 1200%",
+        }}
+    >
+        <section className="section">
+            <Container>
+    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" >
       <Container className="p-5 ">
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
           {heading}
@@ -50,6 +60,9 @@ function Skills({ heading, hardSkills, softSkills }) {
         </Tabs>
       </Container>
     </Jumbotron>
+			</Container>
+		  </section>
+	  </div>
   );
 }
 

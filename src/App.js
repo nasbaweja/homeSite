@@ -20,6 +20,7 @@ import Skills from "./components/home/Skills";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
+import ProjectDetails from "./components/projects/projects.js";
 
 import Experience from "./components/home/Experience";
 
@@ -45,7 +46,10 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {
         experiences.show && (
-          <Experience experiences={experiences}/>
+          <Experience 
+			  experiences={experiences}
+			  gradient={experiences.gradientColors}
+			/>
         )
       }
       {repos.show && (
@@ -69,6 +73,7 @@ const Home = React.forwardRef((props, ref) => {
           heading={skills.heading}
           hardSkills={skills.hardSkills}
           softSkills={skills.softSkills}
+			gradient={skills.gradientColors}
         />
       )}
       
@@ -83,6 +88,7 @@ const App = () => {
     <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Route path="/" exact component={() => <Home ref={titleRef} />} />
+		  {/*<Route path="/PGP" exact component={() => <ProjectDetails title="Pretty Goof Privacy" gradient={mainBody.gradientColors} ref={titleRef}/>} /> */}
       {/* {false && <Route path="/blog" exact component={Blog} />}
       {false && <Route path="/blog/:id" component={BlogPost} />} */}
       <Footer>

@@ -6,8 +6,16 @@ import {
     Jumbotron
 } from "react-bootstrap";
 
-const Experience = ({experiences}) => {
+const Experience = ({experiences, gradient}) => {
     return (  
+		<div
+      id="experiences"
+      className="jumbotron jumbotron-fluid m-0"
+      style={{
+          background: `linear-gradient(136deg,${gradient})`,
+          backgroundSize: "1200% 1200%",
+        }}
+    >
         <section className="section">
             <Container>
                 <Jumbotron fluid className="bg-white">
@@ -24,6 +32,7 @@ const Experience = ({experiences}) => {
                 </Jumbotron>
             </Container>
         </section>
+		</div>
     );
 }
  
