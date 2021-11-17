@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/home/static/css/main.aca6df45.chunk.css",
+    "main.js": "/home/static/js/main.7bec1812.chunk.js",
+    "main.js.map": "/home/static/js/main.7bec1812.chunk.js.map",
+    "runtime-main.js": "/home/static/js/runtime-main.3c590061.js",
+    "runtime-main.js.map": "/home/static/js/runtime-main.3c590061.js.map",
+    "static/js/2.b3c1645e.chunk.js": "/home/static/js/2.b3c1645e.chunk.js",
+    "static/js/2.b3c1645e.chunk.js.map": "/home/static/js/2.b3c1645e.chunk.js.map",
+    "index.html": "/home/index.html",
+    "precache-manifest.11288f2c98ccdb9fcfa0fffad9c653e1.js": "/home/precache-manifest.11288f2c98ccdb9fcfa0fffad9c653e1.js",
+    "service-worker.js": "/home/service-worker.js",
+    "static/css/main.aca6df45.chunk.css.map": "/home/static/css/main.aca6df45.chunk.css.map",
+    "static/js/2.b3c1645e.chunk.js.LICENSE.txt": "/home/static/js/2.b3c1645e.chunk.js.LICENSE.txt",
+    "static/media/PGP.png": "/home/static/media/PGP.1780333e.png",
+    "static/media/blockchainanalysis.png": "/home/static/media/blockchainanalysis.0d0329e0.png",
+    "static/media/dell.png": "/home/static/media/dell.ab8fc833.png",
+    "static/media/neural-network.jpg": "/home/static/media/neural-network.d89c8570.jpg",
+    "static/media/pirate.sardar.jpg": "/home/static/media/pirate.sardar.05c92612.jpg",
+    "static/media/resume.pdf": "/home/static/media/resume.6ecd3fba.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c590061.js",
+    "static/js/2.b3c1645e.chunk.js",
+    "static/css/main.aca6df45.chunk.css",
+    "static/js/main.7bec1812.chunk.js"
+  ]
+}
